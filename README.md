@@ -9,6 +9,15 @@ Ele formata as planilhas de Quebra de ordem cronológica para o jeito perfeito p
   
 
 como usar:
+## Instale as dependencias!
+- Primeiramente, crie a venv
+-   py -m pip install virtualenv // para instalar a lib
+- Segundamente, boa tarde. ative a venv
+-   .\env\Scripts\activate
+- Megamente, instale os pacotes:
+-   pip install -r requirements.txt
+
+## Como usar! (Nao sei se ta certo, eu nao lembro)
 
 - coloque todas as planilhas que vc precisará formatar em uma pasta chamada planilhas;
 
