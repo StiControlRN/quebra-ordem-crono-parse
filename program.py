@@ -1,6 +1,7 @@
 from openpyxl import Workbook
 from openpyxl import load_workbook
 import win32com.client as win32
+from datetime import datetime
 import os
 
 def extensao(name):
@@ -61,8 +62,10 @@ if __name__ == '__main__':
          for col in range(1,8):
             if col != 5:
                ws.cell(linha_plan,col,wsq.cell(linha,col).value)
-            else:
+            if(col == 5):
                ws.cell(linha_plan,col,'*Justi:*'+wsq.cell(linha,col).value)
+            if(col == 7):
+               ws.cell(linha_plan,col,(wsq.cell(linha,col).value).strftime("%d/%m/%y"))
          linha += 1
          linha_plan += 1
       print(linha)
